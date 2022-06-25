@@ -6,7 +6,10 @@ export const Main: FC = () => {
         <>
           <div className={style.wrapper}>
             <div className={style.mainBox}>
-              <div className={style.innerBox}>hello</div>
+              <div className={style.innerBox}>
+                <h2>Tenzies</h2>
+                <p>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+              </div>
             </div>
           </div>
         </>
