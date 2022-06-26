@@ -1,16 +1,16 @@
 import { FC } from 'react';
-import { Die } from '../Die';
+import { Dice } from '../Dice';
 import style from './style.module.css';
 
-type DiesContainerProps = {
+type DiceContainerProps = {
     dies: Number[]
 }
 
-export const DiesContainer: FC<DiesContainerProps> = ({ dies }) => {
+export const DiceContainer: FC<DiceContainerProps> = ({ dies }) => {
     return (
         <div className={style.diesContainer}>
             {dies.map((dieNb) => {
-                return <Die nb={dieNb}></Die>
+                return <Dice nb={dieNb}></Dice>
             })}
         </div>
     )

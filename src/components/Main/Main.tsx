@@ -1,11 +1,10 @@
-import React, { FC } from 'react';
-import { DiesContainer } from '../DiesContainer';
+import { FC } from 'react';
+import { DiceContainer } from '../DiceContainer';
 import style from './style.module.css';
-
-const dies = [1, 5, 1, 3, 4, 6, 2, 1, 4, 3];
+import { getInitialValues } from './utils';
 
 export const Main: FC = () => {
-    
+    const dies = getInitialValues();
     return (
         <>
           <div className={style.wrapper}>
@@ -15,7 +14,7 @@ export const Main: FC = () => {
                   <h2>Tenzies</h2>
                   <p>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
                 </div>
-                <DiesContainer dies={dies} />
+                <DiceContainer dies={dies} />
               </div>
             </div>
           </div>

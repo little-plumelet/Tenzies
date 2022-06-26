@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import style from './style.module.css';
 
-type DieProps = {
+type DiceProps = {
     nb: Number,
 };
 
-export const Die: FC<DieProps> = ({nb}) => {
+export const Dice: FC<DiceProps> = ({nb}) => {
     return (
         <div className={style.die}>
             {nb.toString()}
