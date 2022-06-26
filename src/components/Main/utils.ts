@@ -4,7 +4,11 @@ const getRandomNum = (min: number, max: number) => {
 export const getInitialValues = () => {
     const initialNumbers = [];
     for (let i = 0; i < 10; i++) {
-        initialNumbers.push(getRandomNum(1, 6));
+        initialNumbers.push({
+            value: getRandomNum(1, 6),
+            isHeld: false,
+            id: i
+        });
     }
     return initialNumbers;
 }
