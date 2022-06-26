@@ -1,5 +1,6 @@
 .diesContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 0.5rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }

@@ -25,7 +25,30 @@
 .innerBox {
     width: 100%;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     background-color: #fff29b;
     border-radius: 1rem;
+}
+
+.rollButton {
+    min-width: 10rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+    border: 1px solid white ;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.rollButton:active {
+    background-image: linear-gradient(to right, #ff4e50 0%, #ff4e50 100%);
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.4);
+    border-color: #fff29b;
 }
