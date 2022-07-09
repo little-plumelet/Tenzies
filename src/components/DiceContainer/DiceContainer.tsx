@@ -13,12 +13,10 @@ type DiceContainerProps = {
 
 export const DiceContainer: FC<DiceContainerProps> = ({ diceArr,  setDiceArr }) => {
     const clickHandler = (event: React.MouseEvent<HTMLDivElement>) => {
-      setDiceArr(diceArr.map((dice) => {
-          if (dice.id === (event.target as HTMLElement).getAttribute('id')) {
-            return (diceArr.find((el) => (el.value === dice.value && el.isHeld))  || diceArr.every((el) => !el.isHeld)) ?
-              { ...dice, isHeld: !dice.isHeld } : {...dice}
-          } else
-            return {...dice}
+      setDiceArr(oldDiceArr => oldDiceArr.map((dice) => {
+        return dice.id === (event.target as HTMLElement).getAttribute('id') ?
+          { ...dice, isHeld: !dice.isHeld } : {...dice}
+       
     }));
   }
 

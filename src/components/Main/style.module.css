@@ -13,6 +13,10 @@
     align-items: center;
 }
 
+.subTitle {
+    min-height: 6rem;
+}
+
 .mainBox {
     width: 60%;
     max-width: 600px;
@@ -58,4 +62,8 @@
     background-image: linear-gradient(to right, #ff4e50 0%, #ff4e50 100%);
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.4);
     border-color: #fff29b;
+}
+
+.winner {
+    color: #ff4e50;
 }
