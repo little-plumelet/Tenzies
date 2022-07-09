@@ -6,3 +6,7 @@ This project was created with [Create React App](https://github.com/facebook/cre
 ### React features used in project:
   - useState
   - useEffect
+
+### Todo:
+  - replace numbers on dice with dots
+  - add animation for dice
