@@ -34,6 +34,13 @@
     border-radius: 1rem;
 }
 
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .rollButton {
     min-width: 10rem;
     padding: 0.5rem 1rem;

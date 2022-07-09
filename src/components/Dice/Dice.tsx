@@ -3,7 +3,7 @@ import style from './style.module.css';
 
 type DiceProps = {
     nb: number,
-    id: number,
+    id: string,
     isHeld: boolean
 };
 
@@ -13,7 +13,7 @@ export const Dice: FC<DiceProps> = ({nb, isHeld, id}) => {
         classes.push(style.diceActive)
     }
     return (
-        <div className={classes.join(' ')} id={id.toString()}>
+        <div className={classes.join(' ')} id={id}>
             {nb.toString()}
         </div>
     )
