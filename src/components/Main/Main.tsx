@@ -62,7 +62,7 @@ export const Main: FC = () => {
                   </button>
                   <button
                     onClick={handleClickReset}
-                    className={style.rollButton}
+                    className={style.resetButton}
                   >
                     Reset
                   </button>
